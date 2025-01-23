@@ -2,7 +2,7 @@
 
 function Header() {
   return (
-    <div>
+    <div className="header">
       <header className="center">
         <svg
           className="react-logo"

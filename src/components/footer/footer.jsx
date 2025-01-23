@@ -1,7 +1,10 @@
+import "./footer.css";
+
 function Footer() {
   return (
-    <p>
-      Built with React <img src="../../src/assets/react.svg" alt="" />
+    <p className="footer">
+      Built with React{" "}
+      <img src="../../src/assets/react.svg" alt="" height="12em" width="auto" />
     </p>
   );
 }

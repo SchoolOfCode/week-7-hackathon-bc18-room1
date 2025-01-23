@@ -18,8 +18,8 @@ body {
 }
 
 .react-logo {
-  width: 300px;
-  height: 300px;
+  width: 100px;
+  height: auto;
 }
 
 .react-logo__circle,
@@ -68,4 +68,11 @@ body:hover .react-logo__ring--1 {
 body:hover .react-logo__ring--2,
 body:hover .react-logo__ring--3 {
   transform: rotateZ(0deg);
+}
+
+.header {
+    background-color: darkslateblue;
+    border-radius: 25px;
+    padding: 10px;
+    max-width: 100%;
 }

@@ -1,18 +1,19 @@
 .flashcard {
-  width: 250px;
-  height: 150px;
+  width: 300px;
+  height: 200px;
   border: 1px solid #333;
-  border-radius: 8px;
+  border-radius: 20px;
+  margin: 20px 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  background-color: rgba(0, 0, 0, 0.1);
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   perspective: 1000px;
   position: relative;
   transition: transform 0.6s;
   transform-style: preserve-3d;
+
 }
 
 .flashcard.flipped {
@@ -28,14 +29,27 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 20px
+}
+
+.flashcard-front {
+  background-color: darkslateblue;
 }
 
 .flashcard-back {
   transform: rotateY(180deg);
+  background-color: aqua;
+
 }
 
 .flashcard-text {
+  display: block;
   font-size: 1.2em;
   font-weight: bold;
   text-align: center;
+  margin-top: 10px;
+}
+
+.flashcard-back .flashcard-text {
+  color: black;
 }

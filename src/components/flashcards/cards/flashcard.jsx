@@ -13,8 +13,13 @@ const Flashcard = ({ question, answer }) => {
       className={`flashcard ${isFlipped ? "flipped" : ""}`}
       onClick={handleCardClick}
     >
-      <div className="flashcard-front">
-        {!isFlipped && <div className="flashcard-text">{question}</div>}
+      <div className="flashcard-front" id="card">
+        {!isFlipped && (
+          <div className="flashcard-text">
+            <div className="emoji">🤔</div>
+            <div className="question">{question}</div>
+          </div>
+        )}
       </div>
       <div className="flashcard-back">
         {isFlipped && <div className="flashcard-text">{answer}</div>}
